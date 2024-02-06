@@ -1,0 +1,2 @@
+checks for us_counties:
+  - row_count > 0

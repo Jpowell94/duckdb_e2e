@@ -1,0 +1,7 @@
+duckdb_e2e:
+  target: dev 
+  outputs:
+    dev:
+      type: duckdb
+      path: 'duckdb_e2e/target/covid_cases.db'
+      threads: 1
