@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "duckdb-e2e"
+version = "0.1.0"
+description = ""
+authors = ["jpowell94 <jessepowell.r4@gmail.com>"]
+readme = "README.md"
+packages = [{include = "duckdb_e2e"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-duckdb = "^1.7.1"
+duckdb = "^0.9.2"
+prefect = "^2.14.20"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+black = "^24.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
