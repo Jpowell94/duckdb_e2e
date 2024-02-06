@@ -11,6 +11,7 @@ python = "^3.10"
 dbt-duckdb = "^1.7.1"
 duckdb = "^0.9.2"
 prefect = "^2.14.20"
+prefect-dbt = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.2.1"
