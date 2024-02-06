@@ -12,6 +12,7 @@ dbt-duckdb = "^1.7.1"
 duckdb = "^0.9.2"
 prefect = "^2.14.20"
 prefect-dbt = "^0.4.1"
+soda-core-duckdb = "^3.1.5"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.2.1"
