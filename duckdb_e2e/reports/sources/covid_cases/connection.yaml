@@ -1,0 +1,4 @@
+name: covid_cases
+type: duckdb
+options:
+  filename: covid_cases.db

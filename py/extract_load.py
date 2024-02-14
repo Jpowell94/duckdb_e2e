@@ -8,7 +8,7 @@ from soda.scan import Scan
 @task
 def extract_load():
     conn = duckdb.connect(
-        "/home/jesserussellpowell/codeprojects/dataprojects/duckstuff/duckdb_e2e/duckdb_e2e/target/covid_cases.db"
+        "/home/jesserussellpowell/codeprojects/dataprojects/duckstuff/duckdb_e2e/duckdb_e2e/reports/covid_cases.db"
     )
     conn.sql(
         """
@@ -29,7 +29,7 @@ def extract_load():
 @task
 def validate():
     conn = duckdb.connect(
-        "/home/jesserussellpowell/codeprojects/dataprojects/duckstuff/duckdb_e2e/duckdb_e2e/target/covid_cases.db"
+        "/home/jesserussellpowell/codeprojects/dataprojects/duckstuff/duckdb_e2e/duckdb_e2e/reports/covid_cases.db"
     )
     scan = Scan()
     scan.add_duckdb_connection(conn)
