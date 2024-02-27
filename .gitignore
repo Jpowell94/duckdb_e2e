@@ -1,3 +1,4 @@
 *.db
 covid_cases.db
 duckdb_e2e/reports/covid_cases.db
+*.wal
