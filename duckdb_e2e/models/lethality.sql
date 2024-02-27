@@ -1,2 +1,4 @@
-Select *, deaths/cases as lethality
-From us_counties Order By lethality Desc
+Select *, (deaths/cases) * 100 as lethality
+From us_counties
+Where lethality <= 100
+Order By lethality Desc
